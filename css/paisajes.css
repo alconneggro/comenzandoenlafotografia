@@ -1,0 +1,183 @@
+body{
+  background-color: #02010a;
+
+}
+.contenido{
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Dancing Script', cursive;
+}
+#encabezado{
+  background-color: #567989;
+  border-radius: 10px 10px 0 0 ;
+
+}
+header h1{
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  color: white;
+  padding-left: 10px;
+}
+#menu{
+  background-color: #567989;
+  width: 910px;
+  text-align: right;
+  padding-right: 10px;
+
+}
+#menu a{
+  color: white;
+  font-size: 22px;
+  word-spacing: 10px;
+}
+#menu a:nth-child(even) {
+  text-decoration: none;
+}
+.imagen-paisajes {
+  display: flex;
+  background-color: #d5c75f;
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.columna1 img{
+  width: 200px;
+  box-shadow: 2px 2px black;
+}
+.columna2 img{
+  width: 220px;
+  height: 135px;
+  box-shadow: 2px 2px black;
+}
+.columna3 img{
+  width: 200px;
+  box-shadow: 2px 2px black;
+}
+.columna1 img:first-child{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+}
+.columna1 img:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.columna2 img:first-child{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.columna3 img:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.columna3 img:first-child{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+footer{
+  background-color: #C6d5c5;
+  width: 920px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  font-family: 'Dancing Script', cursive;
+  border-radius: 0 0 10px 10px;
+}
+footer h2{
+  text-align: center;
+  font-size: 30px;
+}
+.c1 ul li:first-child{
+  text-decoration: underline;
+}
+.c1 ul li{
+  list-style: none;
+}
+.c2 ul li{
+  list-style: none;
+}
+.c3 ul li{
+  list-style: none;
+}
+.c4 ul li{
+  list-style: none;
+}
+.c3 ul li img{
+  width: 15px;
+  margin-right: 5px;
+}
+header {
+  animation-name: sliden;
+  animation-duration: 1s;
+}
+@keyframes sliden {
+  0%{
+    margin-top: 150%
+  }
+  60%{
+    margin-top: -5%
+  }
+  100%{
+    margin-top: 0%
+  }
+}
+@media screen and (max-width:900px) {
+  .contenido{
+    margin: 0 auto;
+    width: 450px;
+    }
+  #encabezado{
+    text-align: center;
+    width: 450px;
+    height: auto;
+    }
+#menu{
+  width: 440px;
+  text-align: center;
+}
+.imagen-paisajes{
+  display: block;
+  width: 450px;
+}
+  .columna1 img{
+    display: column;
+    width: 400px;
+    height: 300px;
+  }
+  .columna2 img{
+    display: column;
+    width: 400px;
+    height: 300px;
+  }
+  .columna3 img{
+    display: column;
+    width: 400px;
+    height: 300px;
+  }
+}
+@media screen and (max-width:900px) {
+  footer{
+    display:block;
+    height: auto;
+    text-align: center;
+    width: 450px;
+
+}
+}
